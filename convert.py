@@ -1,9 +1,10 @@
 import requests
 
-url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/categories"
+url = "https://pro-api.coinmarketcap.com/v1/tools/price-conversion"
 parameters = {
-    "start": "1",
-    "limit": "10"
+    "amount": "1",
+    "symbol": "BTC",
+    "convert": "ETH,USD"
 }
 headers = {
     "Accepts": "application/json",
